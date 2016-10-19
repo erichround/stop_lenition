@@ -9,7 +9,7 @@ Thomas Ennever, Felicity Meakins & Erich R. Round (submitted) An acoustic measur
 Obtain replicable measures of:
 - stop duration
 - overall change in intensity
-- intensity vecolity (i.e., 1st derivative of intensity wrt time)
+- intensity vecolity (i.e., first derivative of intensity wrt time)
 - in user-specified spectral bands
 
 Inputs:
