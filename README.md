@@ -11,7 +11,7 @@ Please cite that work if you use the code.
 Obtain replicable measures of:
 - stop duration
 - overall change in intensity
-- intensity vecolity (i.e., first derivative of intensity wrt time)
+- peak absolute intensity velocity (i.e., first derivative of intensity wrt time)
 - in user-specified spectral bands
 
 Inputs:
