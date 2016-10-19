@@ -14,7 +14,7 @@ Obtain replicable measures of:
 
 Inputs:
 - Audio recordings in .WAV format
-- Stop tokens, each annotated by a single point in an Praat TextGrid
+- Stop tokens, each annotated by a single point in a Praat TextGrid
 
 Outputs:
 - CSV file of measures
