@@ -1,8 +1,10 @@
 # Acoustic analysis of stop phonemes
 
-This repository contains R code for acoustic analysis of stop phonemes, including lenited variants, as described in:
+This repository contains R code for automated acoustic analysis of stop phonemes, including lenited variants, as described in:
 
 Thomas Ennever, Felicity Meakins & Erich R. Round (submitted) An acoustic measure of lenition, and Gurindji stops
+
+Please cite that work if you use the code.
 
 # Functionality
 
@@ -20,4 +22,4 @@ Outputs:
 - CSV file of measures
 - TextGrid augmented with a tier delimiting the stops
 
-See the wiki for details
+See the wiki for details.
