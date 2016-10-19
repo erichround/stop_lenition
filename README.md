@@ -1,2 +1,6 @@
-# stops
-Acoustic analysis of stop phonemes
+# Acoustic analysis of stop phonemes
+
+This repository contains code for acoustic analysis of stop phonemes, including lenited variants, as described in:
+
+Thomas Ennever, Felicity Meakins & Erich R. Round (submitted) An acoustic measure of lenition, and Gurindji stops
+
