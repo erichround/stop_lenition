@@ -22,4 +22,4 @@ Outputs:
 - CSV file of measures
 - TextGrid augmented with a tier delimiting the stops
 
-See the wiki for details.
+See the [wiki](https://github.com/erichround/stop_lenition/wiki) for details.
