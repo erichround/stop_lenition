@@ -2,7 +2,7 @@
 
 This repository contains R code for automated acoustic analysis of stop phonemes, including lenited variants, as described in:
 
-Thomas Ennever, Felicity Meakins & Erich R. Round (submitted) A replicable acoustic measure of lenition and the nature of variability in Gurindji stops
+Ennever, Thomas, Felicity Meakins, & Erich R. Round. (2017). A replicable acoustic measure of lenition and the nature of variability in Gurindji stops. Laboratory Phonology: Journal of the Association for Laboratory Phonology, 8(1), 20. DOI: http://doi.org/10.5334/labphon.18
 
 Please cite that work if you use the code.
 
