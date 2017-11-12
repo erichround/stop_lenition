@@ -4,7 +4,7 @@
 ###########################################
 # By Erich Round
 # Created 2015
-# Last updated 2017-01-24
+# Last updated 2017-11-13
 
   library(stringr)
   library(dplyr)
@@ -213,6 +213,19 @@ assemble_raw_intensity_data = function(
   nphonemes <- nrow(phoneme_data)
   nseries <- nphonemes * nbands
 
+  # Check that left time margin is okay
+  short_margins <- filter(phoneme_data, origin < -relative_start_time)$sound_file
+  if (length(short_margins) > 0) {
+      msg <- str_c(
+        "Sound files need to have at least ", 
+        -relative_start_time, 
+        "s before the first 'origin'.\n",
+        "This is not the case for these files:\n",
+        str_c(str_c(short_margins, ".wav"), collapse = "\n"))
+      warning(msg)
+      stop("Sound file(s) with origin too early.")
+    }
+
   # Replicate the data n time_points for n bands, and add a Band column
   bandwise_data <- phoneme_data[rep(1:nphonemes, each = nbands),]
   bandwise_data$band <- rep(band_names, nphonemes)
@@ -249,6 +262,9 @@ assemble_raw_intensity_data = function(
     offset_steps <- intensity_file_df$offset[which(intensity_file_df$intensity_file == bandwise_data$intensity_file[i])]
     origin_time <- bandwise_data$origin[i]
     time_step_sequence <- (((origin_time + relative_start_time) %/% time_step):((origin_time + relative_end_time) %/% time_step))
+    print(time_step_sequence[1])
+    print(origin_time)
+    print(relative_start_time)
     bandwise_data$raw_intensity_series[i] <- list(all_intensity_data[time_step_sequence + offset_steps])
     bandwise_data$raw_times[i] <- list(time_step_sequence * time_step)
   }
