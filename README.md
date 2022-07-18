@@ -28,4 +28,4 @@ See the [wiki](https://github.com/erichround/stop_lenition/wiki) for details.
 
 ## 18 July 2022
 
-A bug was identified which could cause an R error "Error in identify_events(velocity_data) : object 'i_peak_location' not found", which would halt the script. Note, it could not introduce any errors into the results per se, so it will not have affected any research results. The bug could arise in the unlucky case that the usual intensity landmarks could not be found for the very first stop analysed, i.e., the first stop in the first textGrid.
+A bug was identified which could cause an R error "Error in identify_events(velocity_data) : object 'i_peak_location' not found", which would halt the script. Note, it could not introduce any errors into the results per se, so it will not have affected any research results. The bug could arise in the unlucky case that the usual intensity landmarks could not be found for the very first stop analysed, i.e., the first stop in the first textGrid. Thanks to Fenqi Wang for bringing the problem to my attention.
