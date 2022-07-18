@@ -321,6 +321,7 @@ identify_events = function(velocity_data, threshold_ratio = NULL) {
     if (is.na(i_pit_step)) {
       closure_v_extreme_location <- NA
       release_v_extreme_location <- NA
+			i_peak_location <- NA  # Line added 2022-07-18
     } else {
       # However, if you find one, then locate a velocity pit to its left and a velocity peak to its right
       closure_v_extreme_location  <- locate_extremum(series = velocities, start_step = i_pit_step, extremum = "minimum", direction = "left")
